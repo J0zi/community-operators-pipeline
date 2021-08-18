@@ -23,7 +23,8 @@ head /tmp/bundles
 echo "."
 tail /tmp/bundles
 date
-cat /tmp/bundles |sort|uniq| xargs -n1 -P10 -I {}  crane copy {} {}--$TIMESTAMP
+#cat /tmp/bundles|grep ecl |sort|uniq| xargs -n1 -P10 -I {}  crane copy {} {}--$TIMESTAMP
+cat /tmp/bundles|sort|uniq| xargs -n1 -P10 -I {}  crane copy {} {}--$TIMESTAMP
 date
 #IFS=$'\r\n' GLOBIGNORE='*' command eval  'BUNDLE_LIST=($(cat /tmp/bundles|sort|uniq))'
 #IFS=$'\r\n' GLOBIGNORE='*' command eval  'BUNDLE_LIST=($(cat /tmp/bundles|sort|uniq|head -n 2))'
