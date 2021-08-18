@@ -1,6 +1,7 @@
 #!/bin/bash
-TIMESTAMP='20210817T0000003'
-SOURCE_INDEXES=( 'quay.io/community-operators-pipeline/catalog:v4.8' 'quay.io/community-operators-pipeline/catalog:v4.7' 'quay.io/community-operators-pipeline/catalog:v4.6' )
+TIMESTAMP='20210818T0000000'
+#SOURCE_INDEXES=( 'quay.io/community-operators-pipeline/catalog:v4.8' 'quay.io/community-operators-pipeline/catalog:v4.7' 'quay.io/community-operators-pipeline/catalog:v4.6' )
+SOURCE_INDEXES=( 'quay.io/openshift-community-operators/catalog:v4.6' 'quay.io/openshift-community-operators/catalog:v4.7' 'quay.io/openshift-community-operators/catalog:v4.8' )
 CONTAINER_TOOL="docker"
 
 rm /tmp/bundles
